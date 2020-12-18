@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>nike shoes</title>
+	<style>
+		
+*{
+	margin:0;
+	padding: 0;
+	font-family: 'poppins',sans-serif;
+}
+
+body{
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+	min-height: 100vh;
+	background :rgba(0,0,0,0.7);
+
+}
+
+
+.container{
+
+            position: relative;
+
+
+}
+
+.container .card {
+
+position: absolute;
+width: 450px;
+height: 600px;
+background :#232323;
+border-radius: 20px;
+overflow: hidden;
+top: -300px;
+box-shadow: 3px 1px 4px black;
+left: -200px;
+
+}
+
+.container .card:before{
+	content: "";
+	position:absolute;
+	top: 0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background: #368BC1;
+	clip-path: circle(250px at 75% 20%);
+    transition: 0.5s ease-in-out;
+}
+.container .card:hover:before
+{
+	clip-path: circle(400px at 75% -10%);
+
+}
+
+.container .card:after
+{
+	content : "Nike";
+	position: absolute;
+	top:45%;
+	left: -5%;
+	font-size: 14em;
+	font-weight: 800;
+	font-style: italic;
+	color: #368BC1;
+	opacity: 0.4;
+
+}
+
+.container .card .imgbx
+{
+	position: absolute;
+	top: 35%;
+	transform: translateY(-50%);
+	z-index: 10000;
+	width: 100%;
+	height: 220px;
+	transition: 0.5s;
+}
+
+.container .card .imgbx {
+	top: 0%;
+	transform:translateY(-20%);
+
+}
+
+.container .card .imgbx img {
+
+	position:relative;
+	top: 30%
+	left:10%;
+	transform: translate(-7%,30%) rotate(-20deg);
+	transition: 1s;
+}
+
+.container .card:hover .imgbx img{
+
+position:relative;
+	
+	
+	transform: translate(1%,30%) rotate(0deg);
+	
+}
+
+
+.container .card .contentBx
+{
+position: absolute;
+bottom: 10px;
+width: 100%;
+height: 100px;
+text-align: center;
+transition: 1s;
+z-index: 10;
+
+
+}
+.container .card:hover .contentBx
+{
+height: 200px;
+
+
+}
+
+.container .card .contentBx h2
+{
+	position: relative;
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: #f2f2f2;
+
+}
+.container .card .contentBx .size
+{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 8px 20px;
+transition: 0.5s;
+}
+
+.container .card .contentBx .size h3
+{
+color: #fff;
+font-weight: 300;
+font-size: 14px;
+text-transform: uppercase;
+letter-spacing: 2px;
+margin-right: 10px;
+
+}
+.container .card .contentBx .size span
+{
+
+width: 26px;
+height: 26px;
+text-align: center;
+line-height: 26px;
+font-size: 14px;
+display: inline-block;
+color: #111;
+background : #fff;
+margin: 0 5px;
+transition: 0.5s;
+color: #111;
+}
+
+
+.container .card .contentBx .size span:hover{
+
+	background-color: #368BC1;
+}
+
+
+.container .card .contentBx .color 
+{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 8px 20px;
+transition: 0.5s;
+}
+
+.container .card .contentBx .color h3
+{
+color: #fff;
+font-weight: 400;
+font-size: 16px;
+text-transform: uppercase;
+letter-spacing: 2px;
+margin-right: 10px;
+
+}
+.container .card .contentBx .color span
+{
+
+width: 26px;
+height: 26px;
+text-align: center;
+line-height: 26px;
+font-size: 14px;
+display: inline-block;
+color: #111;
+background : #fff;
+margin: 0 5px;
+transition: 0.5s;
+color: #111;
+}
+
+.container .card .contentBx .color span:hover{
+
+border:2px solid black;
+width: 34px;
+
+}
+
+.container .card .contentBx .buy img{
+
+width: 150px;
+height: 60px;
+align-items: center;
+margin:30px;
+
+
+
+
+}
+
+.container .card .contentBx .buy img:hover{
+
+	width:200px;
+	height: 80px;
+}
+
+ 
+	
+	
+
+	</style>
+}
+</head>
+<body>
+<div class="container">
+<img src="nik4.png" style="width: 300px; height: 200px; position: absolute; left:-600px; opacity:0.5;" >
+<img src="nik4.png" style="width: 300px; height: 200px; position: absolute; right:-600px; opacity:0.5;">
+
+<div class="card">
+<div class="imgbx">
+	
+<img src="nike2.png" width="400px" height="300px">
+</div>
+	<div class="contentBx">
+	<h2>Nike Shoes</h2>
+	<div class="size">
+    <h3>Size :</h3>
+    <span>7</span>
+    <span>8</span>
+    <span>9</span>
+    <span>10</span>
+</div>
+<div class="color">
+	<h3>Color :</h3>
+	<span style="background-color:grey"> </span>
+    <span style="background-color:#368BC1" > </span>
+    <span style="background-color:pink"> </span>
+
+
+</div>
+<div class="buy">
+	
+<img src="buy.png">
+</div>
+
+</div>
+</div>	
+</div>	
+
+</div>
+
+
+
+</body>
+</html>
